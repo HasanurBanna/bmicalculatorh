@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator Created By Hasanur</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <div class="bg-[#192a56] w-[90%] md:w-[70%] mt-8 mx-auto rounded-md py-4 px-8 font-protest">
+
+        <h1 class="font-bold text-[#fbc531] text-[40px]">BMI Calculator</h1>
+        <div class="flex flex-col space-y-2 my-3">
+            <label class="text-[#dcdde1] font-semibold text-lg" for="height">Height</label>
+            <input id="height" class="bg-[#5758BB] placeholder:text-[#FFC312] placeholder:font-semibold outline-none rounded-sm p-2 text-lg font-mono" type="number" placeholder="Enter the Your Height in Feet">
+
+            <label class="text-[#dcdde1] font-semibold text-lg" for="weight">Weight</label>
+            <input id="weight" class="bg-[#5758BB] placeholder:text-[#FFC312] placeholder:font-semibold outline-none rounded-sm p-2 text-lg font-mono" type="number" placeholder="Enter Your Weight in KG">
+        </div>
+
+        <button id="button" class="bg-[#F79F1F] py-3 px-8 my-3 rounded-md font-semibold text-lg hover:bg-[#EE5A24] duration-500 hover:scale-105">Calculator</button>
+
+        <div id="result" class=" bg-white p-2 rounded-md my-3 hidden">
+            <h3 class="font-semibold mb-2 text-lg">Your BMI Score</h3>
+            <div class="flex gap-3">
+                <h1 id="score" class="sm:text-[30px] text-[#1B1464] font-bold inline-block bg-[#95a5a6] rounded-md px-3">Your Score</h1>
+                <p id="scorevalue" class="flex justify-center items-center text-lg font-bold">Fill out the form</p>
+            </div>
+            
+        </div>
+
+        <div class="bg-white p-2 rounded-md">
+            <h3 class="font-bold text-[18px] text-[#A3CB38]">BMI Weight Guide</h3>
+
+            <div class="text-[17px] font-semibold">
+            <p class="text-[#f39c12]">Under weight = Less than 18.6</p>
+            <p class="text-[#009432]">Normal Range = 18.6 and 24.9</p>
+            <p class="text-[#EA2027]">Over weight = Greater than 24.9</p>
+            </div>
+        </div>
+        <h1 class="uppercase flex justify-center items-center sm:p-4 sm:text-2xl text-[13px] text-[#FC427B] font-extrabold gap-2"><span class="text-[#9c88ff]">Created</span> by <span class="text-[#EAB543] text-[40px] flex justify-center items-center">--</span> <span class="text-[#00cec9]">Md Hasanur Banna</span></h1>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
